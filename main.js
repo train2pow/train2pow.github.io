@@ -28,3 +28,20 @@ L.control.watermark = function (opts) {
 L.control.watermark({
     position: 'topright'
 }).addTo(map);
+
+// Minimap
+let miniMap = new L.Control.MiniMap(
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'), {
+        toggleDisplay: true,
+        minimized: false
+    }
+    ).addTo(map);
+
+
+// scale bar
+L.control.scale({
+    imperial: false
+}).addTo(map);
+
+// leaflet hash plugin
+L.hash(map);
