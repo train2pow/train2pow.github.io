@@ -70,6 +70,13 @@ main figure img {
     margin: auto;
 }
 
+#powMap {
+    width: 90%;
+    height: 90vh;
+    border: 1px solid gray;
+    margin: auto;
+}
+
 main ul {
     list-style-type: circle;
 }
