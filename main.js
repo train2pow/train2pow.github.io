@@ -22,3 +22,33 @@ let map = L.map("map", {
         baselayers.grau
     ]
 });
+
+// Kartenhintergründe und Overlays zur Layer-Control hinzufügen
+let layerControl = L.control.layers({
+    "basemap.at Standard": baselayers.standard,
+    "basemap.at grau": baselayers.grau,
+    "basemap.at Relief": baselayers.terrain,
+    "basemap.at Oberfläche": baselayers.surface,
+    "basemap.at hochauflösend": baselayers.highdpi,
+    "basemap.at Orthofoto beschriftet": baselayers.ortho_overlay
+}).addTo(map);
+
+
+// add POW Watermark
+L.Control.Watermark = L.Control.extend({
+    onAdd: function (mymap) {
+        var img = L.DomUtil.create('img');
+        img.src = '_POW_AT_lang_blue.png';
+        img.style.width = '100px';
+        return img;
+    },
+    onRemove: function (mymap) {
+        // Nothing to do here
+    }
+});
+L.control.watermark = function (opts) {
+    return new L.Control.Watermark(opts);
+}
+L.control.watermark({
+    position: 'topright'
+}).addTo(mymap);
