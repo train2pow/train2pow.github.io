@@ -63,10 +63,11 @@ main figure img {
     border: 1px solid black;
 }
 
-#mapid {
-    height: 360px;
-    width: 100%;
+#map {
+    width: 90%;
+    height: 90vh;
     border: 1px solid gray;
+    margin: auto;
 }
 
 main ul {
