@@ -19,6 +19,7 @@ var snowflake = L.icon({
     popupAnchor: [0, 0] // point from which the popup should open relative to the iconAnchor
 });
 
+
 // add POW Watermark
 L.Control.Watermark = L.Control.extend({
     onAdd: function (map) {
