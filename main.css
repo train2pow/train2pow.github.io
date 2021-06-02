@@ -19,3 +19,92 @@ header p {
 h1, h2, h3 {
     color: #234b64;
 }
+
+.white,
+.white a:link,
+.white a:visited {
+    color: white;
+}
+
+header nav img {
+    border-radius: 50%;
+}
+
+a:link,
+a:visited {
+    color: black;
+}
+
+a:active {
+    color:#FAEA5D;
+  }
+
+header address {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+main {
+    max-width: 70%;
+    margin: auto
+}
+
+main p {
+    text-align: justify;
+    font-family: 'Gotham Light', sans-serif;
+}
+
+main figure {
+    margin-left: 0;
+    width: 100%;
+}
+
+main figure img {
+    border: 1px solid black;
+}
+
+#mapid {
+    height: 360px;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+footer .next {
+    float: right;
+}
+
+footer .back {
+    float: left;
+}
+
+footer {
+    padding: 1em 0 3 em 0;
+}
+
+i {
+    padding-right: 0.3em;
+}
+
+.mr-3 {
+    margin-right: 00.3em;
+}
+
+.ml-3 {
+    margin-left: 00.3em;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    header img.banner {
+        width: 100vw;
+    }
+}
