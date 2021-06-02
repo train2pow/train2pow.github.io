@@ -16,6 +16,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto+Condensed:ital@0;1&display=swap"
         rel="stylesheet">
+     <!-- Kartenscript -->
+     <script defer src="main.js"></script>
     <title>TRAIN 2 POW</title>
 </head>
 
@@ -45,28 +47,14 @@
             <h3>Übersichtskarte</h3>
             <p>Klicke auf die Schneeflocken in deiner Nähe, um zu sehen, welche Skigebiete mit guter Öffi-Anbindung sich
                 dahinter verbergen und starte deine Reiseplanung.</p>
-            <div id="mapid"></div>
+            <div id="map"></div>
             <script>
                 var mymap = L.map('mapid').setView([47.71216, 13.34290], 6.5);
                 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
-                    /* L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-                        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                        maxZoom: 18,
-                        id: 'mapbox/streets-v11',
-                        tileSize: 512,
-                        zoomOffset: -1,
-                        accessToken: 'your.mapbox.access.token'}) */
                     .addTo(mymap);
-                /*var marker = L.marker([51.5, -0.09]).addTo(mymap);
-                marker.bindPopup("<b>Hello world!</b><br>I am a popup.");
+                
 
-                var popup = L.popup()
-                    .setLatLng([50, -0.01])
-                    .setContent("I am a standalone popup.")
-                    .openOn(mymap);
-                */
-
-                // list of foods truck vendors with latitude and longitude 
+                // list of ski resorts with latitude and longitude 
                 var resorts = [{
                         "id": "kuehtai",
                         "name": "Kühtai",
@@ -235,7 +223,7 @@
                     popupAnchor: [0, 0] // point from which the popup should open relative to the iconAnchor
                 });
 
-                // Links und mehrere Variablen einbinden
+                // Links und mehrere Variablen in Popup einbinden
                 var marker = (function () {
                     for (let index = 0; index < resorts.length; index++) {
                         L.marker([resorts[index].lat, resorts[index].lon], {
