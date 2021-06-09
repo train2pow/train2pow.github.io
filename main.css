@@ -2,6 +2,7 @@ body {
     max-width: 1280px;
     margin: auto;
     font-family: 'Gotham', sans-serif;
+    background: #f2f2f2;
 }
 
 header {
