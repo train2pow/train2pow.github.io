@@ -1,12 +1,41 @@
 body {
     max-width: 1280px;
     margin: auto;
-    font-family: 'Gotham', sans-serif;
-    background: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    background: #f2f2f2
 }
 
 header {
     text-align: center;
+}
+
+.et_pb_row_7.et_pb_row {
+    padding-top: 40px!important;
+    padding-right: 46px!important;
+    padding-bottom: 40px!important;
+    padding-left: 46px!important;
+    padding-top: 40px;
+    padding-right: 46px;
+    padding-bottom: 40px;
+    padding-left: 46px;
+}
+
+.rule1 {
+font-weight: 600;
+text-transform: uppercase;
+font-size: 48px;
+line-height: 55px;
+}
+
+.boxyellow {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: .3em;
+    background: #ffee33;
+    top: .65em;
+    left: 0;
 }
 
 header p {
@@ -57,7 +86,7 @@ main {
 
 main p {
     text-align: justify;
-    font-family: 'Gotham Light', sans-serif;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
 }
 
 main figure {
