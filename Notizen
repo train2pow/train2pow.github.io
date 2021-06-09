@@ -1,3 +1,4 @@
+CSS (BOXEN BAUEN)
 .et_pb_row_7.et_pb_row {
     padding-top: 40px!important;
     padding-right: 46px!important;
@@ -26,3 +27,8 @@ line-height: 55px;
     top: .65em;
     left: 0;
 }
+
+HTML:
+      <span class="rule1">Wind</span> nicht ändern, 
+<span class="rule3">aber die <span class="rule1">Segel</span> anders setzen</span>.
+<span class="rule2">Aristoteles</span>
