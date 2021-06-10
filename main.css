@@ -7,36 +7,16 @@ body {
 
 header {
     text-align: center;
-}
-
-.et_pb_row_7.et_pb_row {
-    padding-top: 40px!important;
-    padding-right: 46px!important;
-    padding-bottom: 40px!important;
-    padding-left: 46px!important;
-    padding-top: 40px;
-    padding-right: 46px;
-    padding-bottom: 40px;
-    padding-left: 46px;
-}
-
-.rule1 {
-font-weight: 600;
-text-transform: uppercase;
-font-size: 48px;
-line-height: 55px;
-}
-
-.boxyellow {
-    position: absolute;
-    z-index: -1;
-    content: "";
+    margin-top: -2em;
+    background-color: yellow;  
     width: 100%;
-    height: .3em;
-    background: #ffee33;
-    top: .65em;
-    left: 0;
+
 }
+
+yellowspan {
+    color: #ffee33;
+} 
+
 
 header p {
     text-align: right;
@@ -44,10 +24,17 @@ header p {
     font-size: 0.8em;
     padding-right: 1em;
     margin-top: -2em;
+  }
+
+h1 {
+    color: #234b64;
 }
 
-h1, h2, h3 {
+h2, h3 {
     color: #234b64;
+    background-color: yellow;  
+    width: 50%;
+    height:2em;
 }
 
 h4, h5 {
