@@ -8,6 +8,7 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
+                "id": "axamer-lizum",
                 "name": "Axamer Lizum",
                 "bundesland": "Tirol",
                 "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Axams%20Axamer%20Lizum%20Talstation@X=11302973@Y=47195813@U=81@L=000793536@B=1@p=1616676241@&externalCall=yestarget=%22_blank%22",
@@ -21,7 +22,8 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
-                "name": "Kuehtai",
+                "id": "kuehtai",
+                "name": "Kühtai",
                 "bundesland": "Tirol",
                 "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=K%FChtai%20Gaiskogelbahn@X=11031427@Y=47216479@U=81@L=000792339@B=1@p=1616676241@&externalCall=yes",
                 "website": "https://www.kuehtai.info/",
@@ -34,6 +36,7 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
+                "id": "stubaier-gletscher",
                 "name": "Stubaier Gletscher",
                 "bundesland": "Tirol",
                 "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=4@O=Neustift%20im%20Stubaital,%20Stubaier%20Gletscher/Eisgrat@X=11154436@Y=47010779@U=105@L=970069932@B=1@p=1555424334@&externalCall=yes",
@@ -47,6 +50,7 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
+                "id": "rosshuette-seefeld",
                 "name": "Rosshütte Seefeld",
                 "bundesland": "Tirol",
                 "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Seefeld%20in%20Tirol%20Bahnhof@X=11189503@Y=47328575@U=81@L=001270308@B=1@p=1616676241@&externalCall=yes",
@@ -60,7 +64,8 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
-                "name": "Bergeralm",
+                "id": "bergeralm",
+                 "name": "Bergeralm",
                 "bundesland": "Tirol",
                 "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Seefeld%20in%20Tirol%20Bahnhof@X=11189503@Y=47328575@U=81@L=001270308@B=1@p=1616676241@&externalCall=yes/",
                 "website": "https://www.bergeralm.net/",
@@ -73,6 +78,7 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
+                "id": "arlberg",
                 "name": "Arlberg",
                 "bundesland": "Tirol",
                 "website": "https://www.skiarlberg.at/de",
@@ -86,6 +92,7 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
+                "id": "schladming",
                 "name": "Schladming",
                 "bundesland": "Steiermark",
                 "website": "https://www.planai.at/de",
@@ -99,6 +106,7 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
+                "id": "semmering",
                 "name": "Semmering",
                 "bundesland": "Niederösterreich",
                 "website": "https://www.semmering.com/",
@@ -112,6 +120,7 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
+                "id": "zell-am-see",
                 "name": "Zell am See",
                 "bundesland": "Salzburg",
                 "website": "https://www.schmitten.at/de",
@@ -125,6 +134,7 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
+                "id": "nordkette",
                 "name": "Nordkette Innsbruck",
                 "bundesland": "Tirol",
                 "website": "https://www.nordkette.com/de",
@@ -138,6 +148,7 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
+                "id": "wilder-kaiser-brixental",
                 "name": "Wilder Kaiser - Brixental",
                 "bundesland": "Tirol",
                 "website": "https://www.skiwelt.at/de/",
@@ -151,6 +162,7 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
+                "id": "stuhleck",
                 "name": "Stuhleck",
                 "bundesland": "Steiermark",
                 "website": "https://www.stuhleck.com/",
@@ -164,6 +176,7 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
+                "id": "gasteinertal",
                 "name": "Gasteinertal",
                 "bundesland": "Steiermark",
                 "website": "https://www.skigastein.com/de",
@@ -177,18 +190,56 @@
             },
             "geometry_name": "SHAPE",
             "properties": {
+                "id": "obertauern",
                 "name": "Obertauern",
                 "bundesland": "Salzburg",
                 "website": "https://www.ski-obertauern.at/",
                 "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Obertauern%20Gr%FCnwaldkopfbahn%20Talstation@X=13544299@Y=47251438@U=81@L=000594213@B=1@p=1616676241@&externalCall=yes",
                 "infotext": "Vom Salzburger Hauptbahnhof mit dem Zug bis Radstadt und von dort mit dem Bus Richtung Mauterndorf nach Obertauern (oder weiter ins Skigebiet Großeck -Speiereck in Mauterndorf). Direktverbindung mit 1x Umsteigen in der Früh und zu Mittag, mit mehrmaligem Umsteigen mehrmals täglich. Sehr schneesicheres Gebiet!"
             }
+        }, {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.44713470941485, 12.390033928586977]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "id": "kitzbuehel",
+                "name": "Kitzbühel",
+                "bundesland": "Tirol",
+                "website": "https://www.kitzski.at/de/bergbahn-ag-kitzbuehel.html",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Kitzb%FChel@X=12391091@Y=47454010@U=81@L=001170411@B=1@p=1616676241@&externalCall=yes",
+                "infotext": "Bla Bla"
+            }
+        }, {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.44713470941485, 12.390033928586977]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "id": "praebichl",
+                "name": "Präbichl",
+                "bundesland": "Tirol",
+                "website": "https://www.kitzski.at/de/bergbahn-ag-kitzbuehel.html",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Kitzb%FChel@X=12391091@Y=47454010@U=81@L=001170411@B=1@p=1616676241@&externalCall=yes",
+                "infotext": "Bla bla"
+            }
+        },{
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.15574859748435, 11.343651455197202]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "id": "schlick2000-stubai",
+                "name": "Schlick 2000 - Stubai",
+                "bundesland": "Tirol",
+                "website": "https://www.stubai.at/skigebiete/schlick2000/",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Fulpmes%20Schlick%202000%20Talstation@X=11343749@Y=47155613@U=81@L=000793629@B=1@p=1616676241@&externalCall=yes",
+                "infotext": "Vom Innsbrucker Hbf mit dem Bus (Richtung Neustift i. St. Mutterbergalm) bis Fuplmes Ortsmitte und während der Skisaison Weiterfahrt mit dem Skibus bis zur Talstation. Bis Fulpmes im 30-Minuten-Takt, Skibusse kommen regelmäßig"
+            }
         }
-
-
-
-
-        {}
     ],
     "crs": {
         "type": "name",
