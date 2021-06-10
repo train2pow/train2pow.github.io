@@ -1,35 +1,195 @@
 {
     "type": "FeatureCollection",
     "totalFeatures": 63,
-    "features": [
-        {
-        "geometry": {
-            "type": "Point",
-            "coordinates": [47.19662225477675, 11.30256412975791]
-        },
-        "geometry_name": "SHAPE",
-        "properties": {
-            "name": "Axamer Lizum",
-            "bundesland": "Tirol",
-            "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Axams%20Axamer%20Lizum%20Talstation@X=11302973@Y=47195813@U=81@L=000793536@B=1@p=1616676241@&externalCall=yestarget=%22_blank%22",
-            "website": "https://www.axamer-lizum.at/",
-            "infotext": "blablabla"
+    "features": [{
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.19662225477675, 11.30256412975791]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Axamer Lizum",
+                "bundesland": "Tirol",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Axams%20Axamer%20Lizum%20Talstation@X=11302973@Y=47195813@U=81@L=000793536@B=1@p=1616676241@&externalCall=yestarget=%22_blank%22",
+                "website": "https://www.axamer-lizum.at/",
+                "infotext": "blablabla"
+            }
+        }, {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.213244507445054, 11.017325791147448]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Kuehtai",
+                "bundesland": "Tirol",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=K%FChtai%20Gaiskogelbahn@X=11031427@Y=47216479@U=81@L=000792339@B=1@p=1616676241@&externalCall=yes",
+                "website": "https://www.kuehtai.info/",
+                "infotext": "blablabla"
+            }
+        }, {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.01377808264369, 11.155595893163834]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Stubaier Gletscher",
+                "bundesland": "Tirol",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=4@O=Neustift%20im%20Stubaital,%20Stubaier%20Gletscher/Eisgrat@X=11154436@Y=47010779@U=105@L=970069932@B=1@p=1555424334@&externalCall=yes",
+                "website": "https://www.stubaier-gletscher.com/",
+                "infotext": "Von Innsbruck mit dem Bus Richtung Neustift i. St. Mutterbergalm. Besonders empfehlenswert in der Vor- und Nachsaison, wenn andere Skigebiete noch nicht aufgesperrt oder schon wieder zugesperrt haben"
+            }
+        }, {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.331496006189944, 11.199200839023229]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Rosshütte Seefeld",
+                "bundesland": "Tirol",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Seefeld%20in%20Tirol%20Bahnhof@X=11189503@Y=47328575@U=81@L=001270308@B=1@p=1616676241@&externalCall=yes",
+                "website": "https://www.seefeld.com/rosshuette",
+                "infotext": "Vom Innsbrucker Hbf per direkter Zugverbindung zum Bhf Seefeld. Von dort entweder in ca. 15 min zu Fuß zur Talstation des Skigebiets Rosshütte oder mit dem Skibus. Direktverbindung alle 30-60 min."
+            }
+        },  {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.08817661269825, 11.459601576674663]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Bergeralm",
+                "bundesland": "Tirol",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Seefeld%20in%20Tirol%20Bahnhof@X=11189503@Y=47328575@U=81@L=001270308@B=1@p=1616676241@&externalCall=yes/",
+                "website": "https://www.bergeralm.net/",
+                "infotext": "Vom Innsbrucker Hbf per direkter Zugverbindung zum Bhf Seefeld. Von dort entweder in ca. 15 min zu Fuß zur Talstation des Skigebiets Rosshütte oder mit dem Skibus. Direktverbindung alle 30-60 min."
+            }
+        },  {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.15991811541276, 10.212339753503121]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Arlberg",
+                "bundesland": "Tirol",
+                "website": "https://www.skiarlberg.at/de",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Seefeld%20in%20Tirol%20Bahnhof@X=11189503@Y=47328575@U=81@L=001270308@B=1@p=1616676241@&externalCall=yes/",
+                "infotext": "Vom Innsbrucker Hbf per direkter Zugverbindung zum Bhf Seefeld. Von dort entweder in ca. 15 min zu Fuß zur Talstation des Skigebiets Rosshütte oder mit dem Skibus. Direktverbindung alle 30-60 min."
+            }
+        }, {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.39727760118509, 13.685840669078155]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Schladming",
+                "bundesland": "Steiermark",
+                "website": "https://www.planai.at/de",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Schladming%20Bahnhof@X=13678840@Y=47393953@U=81@L=001261227@B=1@p=1616676241@&externalCall=yes",
+                "infotext": "Vom Grazer Hauptbahnhof mit dem Zug bis Schladming Bahnhhof. Von dort sind es nur wenige Minuten bis ins Skigebiet. Der Einstieg Planai West empfiehlt sich für Zuganreisende. Direktverbindung alle 2 Stunden, dazwischen mit Umsteigen."
+            }
+        }, {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.63212451281339, 15.830397517128526]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Semmering",
+                "bundesland": "Niederösterreich",
+                "website": "https://www.semmering.com/",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Schladming%20Bahnhof@X=13678840@Y=47393953@U=81@L=001261227@B=1@p=1616676241@&externalCall=yes",
+                "infotext": "BLA BLA BLA."
+            }
+        }, {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.326794909587136, 12.772550865253573]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Zell am See",
+                "bundesland": "Salzburg",
+                "website": "https://www.schmitten.at/de",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Zell%20am%20See%20Bahnhof@X=12797071@Y=47320727@U=81@L=001250610@B=1@p=1616676241@&externalCall=yes",
+                "infotext": "BLA BLA BLA."
+            }
+        }, {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.28654323399738, 11.398919425066605]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Nordkette Innsbruck",
+                "bundesland": "Tirol",
+                "website": "https://www.nordkette.com/de",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Innsbruck%20Nordkette@X=11398906@Y=47285786@U=81@L=000791097@B=1@p=1616676241@&externalCall=yes",
+                "infotext": "Die modernisierte Bergbahn in Innsbruck hat ihre Talstation beim Congress Innsbruck, zwischen Inn und der Kaiserlichen Hofburg. Damit liegt der Start der Bahn im Herzen Innsbrucks und ist einfach zu erreichen."
+            }
+        }, {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.50533348987689, 12.19037970322786]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Wilder Kaiser - Brixental",
+                "bundesland": "Tirol",
+                "website": "https://www.skiwelt.at/de/",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=4@O=Ellmau,%20Ellmau/Skiwelt%20Wilder%20Kaiser/Hartkaiserbah@X=12293881@Y=47508053@U=105@L=970066763@B=1@p=1555424334@&externalCall=yes",
+                "infotext": "Bequeme Bahnanreise in eines der größten und modernsten Skigebiete weltweit - die SkiWelt Wilder Kaiser - Brixental. Die SkiWelt Orte Ellmau, Going, Scheffau, Söll und Itter können bequem über den Bahnhof Wörgl, Kufstein oder St. Johann erreicht werden"
+            }
+        }, {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.61560598794495, 15.757688982742394]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Stuhleck",
+                "bundesland": "Steiermark",
+                "website": "https://www.stuhleck.com/",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Spital%20am%20Semmering%20Stuhleckbahn%20Talstation@X=15759178@Y=47615322@U=81@L=000613042@B=1@p=1616676241@&externalCall=yes",
+                "infotext": "Bla Bla Bla"
+            }
+        },  {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.16923910696097, 13.09825239261632]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Gasteinertal",
+                "bundesland": "Steiermark",
+                "website": "https://www.skigastein.com/de",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Bad%20Hofgastein%20Bahnhof@X=13100996@Y=47195741@U=81@L=001250402@B=1@p=1616676241@&externalCall=yes",
+                "infotext": "Bla Bla Bla"
+            }
+        },  {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [47.25234729195317, 13.54717867396342]
+            },
+            "geometry_name": "SHAPE",
+            "properties": {
+                "name": "Obertauern",
+                "bundesland": "Salzburg",
+                "website": "https://www.ski-obertauern.at/",
+                "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Obertauern%20Gr%FCnwaldkopfbahn%20Talstation@X=13544299@Y=47251438@U=81@L=000594213@B=1@p=1616676241@&externalCall=yes",
+                "infotext": "Vom Salzburger Hauptbahnhof mit dem Zug bis Radstadt und von dort mit dem Bus Richtung Mauterndorf nach Obertauern (oder weiter ins Skigebiet Großeck -Speiereck in Mauterndorf). Direktverbindung mit 1x Umsteigen in der Früh und zu Mittag, mit mehrmaligem Umsteigen mehrmals täglich. Sehr schneesicheres Gebiet!"
+            }
         }
-    }, {
-        "geometry": {
-            "type": "Point",
-            "coordinates": [47.19662225477675, 11.30256412975791]
-        },
-        "geometry_name": "SHAPE",
-        "properties": {
-            "name": "Axamer Lizum",
-            "bundesland": "Tirol",
-            "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Axams%20Axamer%20Lizum%20Talstation@X=11302973@Y=47195813@U=81@L=000793536@B=1@p=1616676241@&externalCall=yestarget=%22_blank%22",
-            "website": "https://www.axamer-lizum.at/",
-            "infotext": "blablabla"
-        }
-    }, {
-    }],
+
+
+
+
+        {}
+    ],
     "crs": {
         "type": "name",
         "properties": {
@@ -37,4 +197,3 @@
         }
     }
 }
-]
