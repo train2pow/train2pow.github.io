@@ -32,3 +32,8 @@ HTML:
       <span class="rule1">Wind</span> nicht ändern, 
 <span class="rule3">aber die <span class="rule1">Segel</span> anders setzen</span>.
 <span class="rule2">Aristoteles</span>
+
+
+ p:hover, h1:hover, a:hover {
+    background-color: yellow;
+  }
