@@ -19,6 +19,24 @@ var snowflake = L.icon({
     popupAnchor: [0, 0] // point from which the popup should open relative to the iconAnchor
 });
 
+// Links und mehrere Variablen in Popup einbinden
+var marker = (function () {
+    for (let index = 0; index < SKIGEBIETE.length; index++) {
+        L.marker([SKIGEBIETE[index].lat, SKIGEBIETE[index].lon], {
+                icon: snowflake
+            })
+            .bindPopup(
+                '<h2>' + SKIGEBIETE[index].name + '</h2>' +
+                '<p><b>' + SKIGEBIETE[index].bundesland + '</b></p>' +
+                '<p>' + SKIGEBIETE[index].info + '</p>' +
+                '<p><a href=' + SKIGEBIETE[index].link +
+                '><i class="fas fa-link"></i>Zur Website</a></p>' +
+                '<p><a href=' + SKIGEBIETE[index].scotty + 'target="_blank"' +
+                '><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>')
+            .addTo(map);
+    }
+})();
+
 
 // add POW Watermark
 L.Control.Watermark = L.Control.extend({
