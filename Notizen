@@ -1,0 +1,39 @@
+CSS (BOXEN BAUEN)
+.et_pb_row_7.et_pb_row {
+    padding-top: 40px!important;
+    padding-right: 46px!important;
+    padding-bottom: 40px!important;
+    padding-left: 46px!important;
+    padding-top: 40px;
+    padding-right: 46px;
+    padding-bottom: 40px;
+    padding-left: 46px;
+}
+
+.rule1 {
+font-weight: 600;
+text-transform: uppercase;
+font-size: 48px;
+line-height: 55px;
+}
+
+.boxyellow {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: .3em;
+    background: #ffee33;
+    top: .65em;
+    left: 0;
+}
+
+HTML:
+      <span class="rule1">Wind</span> nicht ändern, 
+<span class="rule3">aber die <span class="rule1">Segel</span> anders setzen</span>.
+<span class="rule2">Aristoteles</span>
+
+
+ p:hover, h1:hover, a:hover {
+    background-color: yellow;
+  }

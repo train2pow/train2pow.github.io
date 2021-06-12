@@ -1,12 +1,21 @@
 body {
     max-width: 1280px;
     margin: auto;
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background: #f2f2f2
 }
 
 header {
     text-align: center;
+    margin-top: 1em;
+    background-color: yellow; 
+    width: 100%;
 }
+
+yellowspan {
+    color: #ffee33;
+} 
+
 
 header p {
     text-align: right;
@@ -14,10 +23,25 @@ header p {
     font-size: 0.8em;
     padding-right: 1em;
     margin-top: -2em;
+    
+  }
+
+h1 {
+    color: #234b64;
 }
 
-h1, h2, h3 {
+h2, h3 {
     color: #234b64;
+    background-color: yellow;  
+    width: 100%;
+    height:0.5em;
+    margin-top: 5%
+}
+
+h4, h5 {
+    color: #234b64;
+    font-weight: lighter;
+    margin-top: 8%
 }
 
 .white,
@@ -30,9 +54,11 @@ header nav img {
     border-radius: 50%;
 }
 
+:link:hover { background-color: yellow; }
+
 a:link,
 a:visited {
-    color: black;
+    color: #234b64;
 }
 
 a:active {
@@ -51,7 +77,8 @@ main {
 
 main p {
     text-align: justify;
-    font-family: 'Gotham Light', sans-serif;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    color: #234b64;
 }
 
 main figure {
@@ -79,6 +106,8 @@ main figure img {
 
 main ul {
     list-style-type: circle;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    color: #234b64;
 }
 
 footer .next {
@@ -91,6 +120,8 @@ footer .back {
 
 footer {
     padding: 1em 0 3 em 0;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    color: #234b64;
 }
 
 i {
@@ -105,6 +136,18 @@ i {
     margin-left: 00.3em;
 }
 
+.button-up-arrow-white{
+    content: '';
+    width: 16px;
+    height: 16px;
+    right: -27px;
+    top: 5px;
+    background-image: url(/wp-content/uploads/2019/10/link-out-dark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
 @media screen and (max-width: 900px) {
     main {
         max-width: 90%;
@@ -116,3 +159,4 @@ i {
         width: 100vw;
     }
 }
+
