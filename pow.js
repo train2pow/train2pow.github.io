@@ -4,7 +4,7 @@
 let powMap = L.map("powMap", {
     fullscreenControl: true,
     center: [47.71216, 13.34290],
-    zoom: 6.5,
+    zoom: 6.25,
     layers: [
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
     ]
@@ -46,20 +46,39 @@ L.control.scale({
 
 var standorte = [{
     "name": "Innsbruck",
-    "lat": 47.213244507445054,
-    "lon": 11.017325791147448,
+    "lat": 47.26913970430914,
+    "lon": 11.395510708574795,
     "bundesland": "Tirol",
-    "link": "https://www.kuehtai.info/",
-    "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=K%FChtai%20Gaiskogelbahn@X=11031427@Y=47216479@U=81@L=000792339@B=1@p=1616676241@&externalCall=yes"
+    "stammtisch": "jeden zweiten Mittwoch im Monat",
+    "ansprechperson": "Verena",
+    "mail": "mailto:innsbruck@protectourwinters.at"
 },
 {
     "name": "Graz",
-    "lat": 47.15574859748435,
-    "lon": 11.343651455197202,
+    "lat": 47.080114945960695,
+    "lon": 15.437667342361847,
     "bundesland": "Steiermark",
-    "info": "Vom Innsbrucker Hbf mit dem Bus (Richtung Neustift i. St. Mutterbergalm) bis Fuplmes Ortsmitte und während der Skisaison Weiterfahrt mit dem Skibus bis zur Talstation. Bis Fulpmes im 30-Minuten-Takt, Skibusse kommen regelmäßig.",
-    "link": "https://www.stubai.at/skigebiete/schlick2000/",
-    "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Fulpmes%20Schlick%202000%20Talstation@X=11343749@Y=47155613@U=81@L=000793629@B=1@p=1616676241@&externalCall=yes"
+    "stammtisch": "jeden zweiten Mittwoch im Monat",
+    "ansprechperson": "Christina",
+    "mail": "mailto:graz@protectourwinters.at"
+},
+{
+    "name": "Wien",
+    "lat": 48.213737059062694,
+    "lon": 16.3649432660941,
+    "bundesland": "Wien",
+    "stammtisch": "jeden zweiten Mittwoch im Monat",
+    "ansprechperson": "Moritz",
+    "mail": "mailto:wien@protectourwinters.at"
+},
+{
+    "name": "Salzburg",
+    "lat": 47.80878407463205,
+    "lon": 13.043037761598907,
+    "bundesland": "Salzburg",
+    "stammtisch": "jeden zweiten Mittwoch im Monat",
+    "ansprechperson": "Lisa",
+    "mail": "mailto:salzburg@protectourwinters.at"
 }
 ];
 
@@ -70,10 +89,11 @@ var standorte = [{
                 icon: snowflake
             })
             .bindPopup(
-                '<h2>' + standorte[index].name + '</h2>' +
-                '<p><b>' + standorte[index].bundesland + '</b></p>' +
-                '<p><a href=' + standorte[index].scotty + 'target="_blank"' +
-                '><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>')
+                '<h2>' + standorte[index].name + '</h2></br>' +
+                '<p><b>Stammtisch: </b>' + standorte[index].stammtisch + '</p>' +
+                '<p><b>Ansprechperson: </b>' + standorte[index].ansprechperson + '</p>' +
+                '<p><a href=' + standorte[index].mail  +
+                '><i class="fas fa-envelope"></i>Schreib ein Mail!</a></p>')
             .addTo(powMap);
     }
 })();
