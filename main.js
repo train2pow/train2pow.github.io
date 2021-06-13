@@ -13,13 +13,13 @@ let map = L.map("map", {
 // Overlays für die Themen zum Ein- und Ausschalten definieren
 let overlays = {
     at: L.featureGroup(),
-    bgld: L.featureGroup(),
+    bgld: L.featureGroup(SKIGEBIETE.bundesland === "Burgenland"),
     ktn: L.featureGroup(),
     noe: L.featureGroup(),
     ooe: L.featureGroup(),
     sbg: L.featureGroup(),
     stmk: L.featureGroup(),
-    tir: L.featureGroup(),
+    tir: L.featureGroup(SKIGEBIETE.bundesland === "Tirol"),
     vbg: L.featureGroup(),
     wien: L.featureGroup()
 };
@@ -37,6 +37,7 @@ let layerControl = L.control.layers({
     "Vorarlberg": overlays.vbg,
     "Wien": overlays.wien
 }).addTo(map);
+overlays.at.addTo(map);
 
 // create custom snowflake icon
 var snowflake = L.icon({
