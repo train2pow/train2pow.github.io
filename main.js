@@ -5,6 +5,7 @@ let map = L.map("map", {
     fullscreenControl: true,
     center: [47.71216, 13.34290],
     zoom: 7,
+    zoomSnap: 0.25,
     layers: [
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
     ]
@@ -13,13 +14,13 @@ let map = L.map("map", {
 // Overlays für die Themen zum Ein- und Ausschalten definieren
 let overlays = {
     at: L.featureGroup(),
-    bgld: L.featureGroup(SKIGEBIETE.bundesland === "Burgenland"),
+    bgld: L.featureGroup(),
     ktn: L.featureGroup(),
     noe: L.featureGroup(),
     ooe: L.featureGroup(),
-    sbg: L.featureGroup(SKIGEBIETE.bundesland === "Tirol"),
+    sbg: L.featureGroup(),
     stmk: L.featureGroup(),
-    tir: L.featureGroup(SKIGEBIETE.bundesland === "Tirol"),
+    tir: L.featureGroup(),
     vbg: L.featureGroup(),
     wien: L.featureGroup()
 };
