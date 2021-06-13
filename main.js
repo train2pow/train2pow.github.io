@@ -5,7 +5,6 @@ let map = L.map("map", {
     fullscreenControl: true,
     center: [47.71216, 13.34290],
     zoom: 7,
-    zoomSnap: 0.25,
     layers: [
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
     ]
@@ -40,6 +39,7 @@ let layerControl = L.control.layers({
 }).addTo(map);
 overlays.at.addTo(map);
 
+
 // create custom snowflake icon
 var snowflake = L.icon({
     iconUrl: 'snowflake.png',
@@ -52,110 +52,61 @@ var snowflake = L.icon({
 var marker = (function () {
     for (let index = 0; index < SKIGEBIETE.length; index++) {
         let marker = L.marker([SKIGEBIETE[index].lat, SKIGEBIETE[index].lon], {
+            icon: snowflake
+        })
+        marker.bindPopup(`
+            <h2>${SKIGEBIETE[index].name}</h2>
+            <p>${SKIGEBIETE[index].bundesland}</p>
+            <p>SKIGEBIETE[index].info</p>
+            <p><a href=${SKIGEBIETE[index].link}><i class="fas fa-link"></i>Zur Website</a></p>
+            <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
+           `)
+            .addTo(overlays.at)
+        if (SKIGEBIETE[index].bundeslandId == "sbg") {
+            let marker = L.marker([SKIGEBIETE[index].lat, SKIGEBIETE[index].lon], {
                 icon: snowflake
             })
-            marker.bindPopup(`
-            <h2>${SKIGEBIETE[index].name}</h2>
-            <ul>
-            <li>${SKIGEBIETE[index].bundesland}</li>
-            <li></li>
-            </ul>
-            `)
-                /*'<h2>' + SKIGEBIETE[index].name + '</h2>' +
+            marker.bindPopup(
+                '<h2>' + SKIGEBIETE[index].name + '</h2>' +
                 '<p><b>' + SKIGEBIETE[index].bundesland + '</b></p>' +
                 '<p>' + SKIGEBIETE[index].info + '</p>' +
                 '<p><a href=' + SKIGEBIETE[index].link +
                 '><i class="fas fa-link"></i>Zur Website</a></p>' +
                 '<p><a href=' + SKIGEBIETE[index].scotty + 'target="_blank"' +
-                '><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>')
-                */
-            .addTo(overlays.at)
-            if (SKIGEBIETE[index].bundeslandId == "sbg") {
-                let marker = L.marker([SKIGEBIETE[index].lat, SKIGEBIETE[index].lon], {
-                    icon: snowflake
-                })
-                    marker.bindPopup(
-                    '<h2>' + SKIGEBIETE[index].name + '</h2>' +
-                    '<p><b>' + SKIGEBIETE[index].bundesland + '</b></p>' +
-                    '<p>' + SKIGEBIETE[index].info + '</p>' +
-                    '<p><a href=' + SKIGEBIETE[index].link +
-                    '><i class="fas fa-link"></i>Zur Website</a></p>' +
-                    '<p><a href=' + SKIGEBIETE[index].scotty + 'target="_blank"' +
-                    '><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>'
-                );
-                marker.addTo(overlays.sbg);
-            }
-            if (SKIGEBIETE[index].bundeslandId == "tir") {
-                let marker = L.marker([SKIGEBIETE[index].lat, SKIGEBIETE[index].lon], {
-                    icon: snowflake
-                })
-                    marker.bindPopup(
-                    '<h2>' + SKIGEBIETE[index].name + '</h2>' +
-                    '<p><b>' + SKIGEBIETE[index].bundesland + '</b></p>' +
-                    '<p>' + SKIGEBIETE[index].info + '</p>' +
-                    '<p><a href=' + SKIGEBIETE[index].link +
-                    '><i class="fas fa-link"></i>Zur Website</a></p>' +
-                    '<p><a href=' + SKIGEBIETE[index].scotty + 'target="_blank"' +
-                    '><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>'
-                );
-                marker.addTo(overlays.tir);
-            }
-            if (SKIGEBIETE[index].bundeslandId == "stmk") {
-                let marker = L.marker([SKIGEBIETE[index].lat, SKIGEBIETE[index].lon], {
-                    icon: snowflake
-                })
-                    marker.bindPopup(
-                    '<h2>' + SKIGEBIETE[index].name + '</h2>' +
-                    '<p><b>' + SKIGEBIETE[index].bundesland + '</b></p>' +
-                    '<p>' + SKIGEBIETE[index].info + '</p>' +
-                    '<p><a href=' + SKIGEBIETE[index].link +
-                    '><i class="fas fa-link"></i>Zur Website</a></p>' +
-                    '<p><a href=' + SKIGEBIETE[index].scotty + 'target="_blank"' +
-                    '><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>'
-                );
-                marker.addTo(overlays.stmk);
-            }
-
-            
-
-            /* if (typeof SKIGEBIETE[index].bundeslandId == "tir") {
-                console.log(SKIGEBIETE[index].bundeslandId == "tir")
-                marker.bindPopup(SKIGEBIETE[index].name)
-                marker.addTo(overlays.tir)
-                } else {
-                    console.log("nichts gefunden")
-                };
-
-            for ( of  {
-                let marker = L.marker([
-                    SKIGEBIETE.lat,
-                    SKIGEBIETE.lon
-                ]);
-                marker.bindPopup(
-                    '<h2>' + SKIGEBIETE[index].name + '</h2>' +
-                    '<p><b>' + SKIGEBIETE[index].bundesland + '</b></p>' +
-                    '<p>' + SKIGEBIETE[index].info + '</p>' +
-                    '<p><a href=' + SKIGEBIETE[index].link +
-                    '><i class="fas fa-link"></i>Zur Website</a></p>' +
-                    '<p><a href=' + SKIGEBIETE[index].scotty + 'target="_blank"' +
-                    '><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>'
-                    );
-            }
-            */
-
-                
-
-
-
-            /* if (SKIGEBIETE.bundeslandId === "tir") {
-                addTo(overlays.tir)
-            } else if (SKIGEBIETE.bundeslandId === "stmk") {
-                addTo(overlays.stmk)
-            } else {
-                // nothing to do here
-            }
-                
-            ; */
+                '><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>'
+            );
+            marker.addTo(overlays.sbg);
+        }
+        if (SKIGEBIETE[index].bundeslandId == "tir") {
+            let marker = L.marker([SKIGEBIETE[index].lat, SKIGEBIETE[index].lon], {
+                icon: snowflake
+            })
+            marker.bindPopup(
+                '<h2>' + SKIGEBIETE[index].name + '</h2>' +
+                '<p><b>' + SKIGEBIETE[index].bundesland + '</b></p>' +
+                '<p>' + SKIGEBIETE[index].info + '</p>' +
+                '<p><a href=' + SKIGEBIETE[index].link +
+                '><i class="fas fa-link"></i>Zur Website</a></p>' +
+                '<p><a href=' + SKIGEBIETE[index].scotty + 'target="_blank"' +
+                '><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>'
+            );
+            marker.addTo(overlays.tir);
+        }
+        if (SKIGEBIETE[index].bundeslandId == "stmk") {
+            let marker = L.marker([SKIGEBIETE[index].lat, SKIGEBIETE[index].lon], {
+                icon: snowflake
+            })
+            marker.bindPopup(
+                '<h2>' + SKIGEBIETE[index].name + '</h2>' +
+                '<p><b>' + SKIGEBIETE[index].bundesland + '</b></p>' +
+                '<p>' + SKIGEBIETE[index].info + '</p>' +
+                '<p><a href=' + SKIGEBIETE[index].link +
+                '><i class="fas fa-link"></i>Zur Website</a></p>' +
+                '<p><a href=' + SKIGEBIETE[index].scotty + 'target="_blank"' +
+                '><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>'
+            );
+            marker.addTo(overlays.stmk);
+        }
     }
 })();
 
@@ -185,7 +136,7 @@ let miniMap = new L.Control.MiniMap(
         toggleDisplay: true,
         minimized: false
     }
-    ).addTo(map);
+).addTo(map);
 
 
 // scale bar
