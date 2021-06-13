@@ -1,7 +1,18 @@
 // Kartenscript
 
+// Karte initialisieren und auf Österreichs Mittelpunkt blicken
+let map = L.map("map", {
+    fullscreenControl: true,
+    center: [47.71216, 13.34290],
+    zoom: 7,
+    layers: [
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
+    ]
+});
+
 // Overlays für die Themen zum Ein- und Ausschalten definieren
 let overlays = {
+    at: L.featureGroup(),
     bgld: L.featureGroup(),
     ktn: L.featureGroup(),
     noe: L.featureGroup(),
@@ -15,6 +26,7 @@ let overlays = {
 
 // Kartenhintergründe und Overlays zur Layer-Control hinzufügen
 let layerControl = L.control.layers({
+    "ganz Österreich": overlays.at,
     "Burgenland": overlays.bgld,
     "Kärnten": overlays.ktn,
     "Niederösterreich": overlays.noe,
@@ -25,17 +37,6 @@ let layerControl = L.control.layers({
     "Vorarlberg": overlays.vbg,
     "Wien": overlays.wien
 }).addTo(map);
-
-// Karte initialisieren und auf Österreichs Mittelpunkt blicken
-let map = L.map("map", {
-    fullscreenControl: true,
-    center: [47.71216, 13.34290],
-    zoom: 6.5,
-    layers: [
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
-    ]
-});
-
 
 // create custom snowflake icon
 var snowflake = L.icon({
