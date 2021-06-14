@@ -143,6 +143,26 @@ const SKIGEBIETE = [{
     "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Obertauern%20Gr%FCnwaldkopfbahn%20Talstation@X=13544299@Y=47251438@U=81@L=000594213@B=1@p=1616676241@&externalCall=yes"
 },
 {
+    "id": "st.johann-ip",
+    "name": "St. Johann im Pongau",
+    "lat": 47.32610174738698, 
+    "lon": 13.195279526100395,
+    "bundesland": "Salzburg",
+    "bundeslandId": "sbg",
+    "link": "https://www.snow-space.com/",
+    "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=St.Johann im Pongau Bahnhof@X=13194906@Y=47347605@U=81@L=001250408@B=1@p=1623396474@&externalCall=yes"
+},
+{
+    "id": "radstadt",
+    "name": "Radstadt - Altenmarkt",
+    "lat": 47.373334146677216,
+    "lon": 13.46607250288871,
+    "bundesland": "Salzburg",
+    "bundeslandId": "sbg",
+    "link": "http://www.radstadt-altenmarkt.at/",
+    "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Radstadt Bahnhof@X=13466281@Y=47383849@U=81@L=001250415@B=1@p=1623396474@&externalCall=yes"
+},
+{
     "id": "kitzbuehel",
     "name": "Kitzbühel",
     "lat": 47.44713470941485,
@@ -171,6 +191,38 @@ const SKIGEBIETE = [{
     "bundeslandId": "tir",
     "info": "Vom Innsbrucker Hbf mit dem Bus (Richtung Neustift i. St. Mutterbergalm) bis Fuplmes Ortsmitte und während der Skisaison Weiterfahrt mit dem Skibus bis zur Talstation. Bis Fulpmes im 30-Minuten-Takt, Skibusse kommen regelmäßig.",
     "link": "https://www.stubai.at/skigebiete/schlick2000/",
+    "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Fulpmes%20Schlick%202000%20Talstation@X=11343749@Y=47155613@U=81@L=000793629@B=1@p=1616676241@&externalCall=yes"
+},
+{
+    "id": "silvretta-montafon",
+    "name": "Silvretta Montafon",
+    "lat": 47.0798462322768,
+    "lon": 9.921505698987032,
+    "bundesland": "Vorarlberg",
+    "bundeslandId": "vbg",
+    "info": "Für Reisende mit dem Skizug Montafon gibt es -10% auf Tages- und Halbtagesskipässe.",
+    "link": "https://www.silvretta-montafon.at/de",
+    "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Schruns Bahnhof@X=9918536@Y=47079205@U=81@L=001280110@B=1@p=1623396474@&externalCall=yes"
+},
+{
+    "id": "sonnenkopf",
+    "name": "Sonnenkopf - Klostertal",
+    "lat": 47.13080033706712,
+    "lon": 10.056117241188264,
+    "bundesland": "Vorarlberg",
+    "bundeslandId": "vbg",
+    "link": "http://www.sonnenkopf.com/",
+    "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Wald am Arlberg Sonnenkopfbahn Talstation@X=10053113@Y=47128538@U=81@L=000891027@B=1@p=1623396474@&externalCall=yes"
+},
+{
+    "id": "lienz-hochstein",
+    "name": "Lienz - Hochstein",
+    "lat": 46.83107602100516,
+    "lon": 12.753327111070842,
+    "bundesland": "Tirol",
+    "bundeslandId": "tir",
+    "info": "Unweit des Stadtzentrums von Lienz und auch vom Bahnhof problemlos zu Fuß erreichbar.",
+    "link": "http://www.lienzer-bergbahnen.at/",
     "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Fulpmes%20Schlick%202000%20Talstation@X=11343749@Y=47155613@U=81@L=000793629@B=1@p=1616676241@&externalCall=yes"
 }
 ];
