@@ -202,9 +202,14 @@ var marker = (function () {
 let miniMap = new L.Control.MiniMap(
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'), {
         toggleDisplay: true,
-        minimized: false
+        minimized: false,
+        // zoomLevelOffset: The offset applied to the zoom in the minimap compared to the zoom of the main map. Can be positive or negative, defaults to -5.
+        zoomLevelOffset: -4,
+        width: 100,
+        height: 100
     }
 ).addTo(map);
+// source: https://github.com/Norkart/Leaflet-MiniMap
 
 
 // scale bar
