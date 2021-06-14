@@ -66,7 +66,7 @@ let overlays = {
     wien: L.featureGroup()
 };
 
-// Kartenhintergründe und Overlays zur Layer-Control hinzufügen
+// Overlays zur Layer-Control hinzufügen
 let layerControl = L.control.layers({
     "ganz Österreich": overlays.at,
     "Burgenland": overlays.bgld,
@@ -90,7 +90,7 @@ var snowflake = L.icon({
     popupAnchor: [0, 0] // point from which the popup should open relative to the iconAnchor
 });
 
-// Links und mehrere Variablen in Popup einbinden
+// Für jeden Eintrag in skigebiete.js werden Marker erzeugt und zum Layer overlays.at ("ganz Österreich") hinzugefügt
 var marker = (function () {
     for (let index = 0; index < SKIGEBIETE.length; index++) {
         let marker = L.marker([SKIGEBIETE[index].lat, SKIGEBIETE[index].lon], {
@@ -104,6 +104,7 @@ var marker = (function () {
             <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
            `)
             .addTo(overlays.at)
+        // Mit den nachfolgenden if-Abfragen wird für jedes Bundesland noch ein eigener Layer angelegt
         if (SKIGEBIETE[index].bundeslandId == "ktn") {
             let marker = L.marker([SKIGEBIETE[index].lat, SKIGEBIETE[index].lon], {
                 icon: snowflake
@@ -219,4 +220,5 @@ L.control.scale({
 
 // leaflet hash plugin
 L.hash(map);
+// source: https://cdnjs.com/libraries/leaflet-hash
 
