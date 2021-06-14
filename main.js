@@ -80,7 +80,7 @@ var marker = (function () {
         marker.bindPopup(`
             <h2>${SKIGEBIETE[index].name}</h2>
             <p>${SKIGEBIETE[index].bundesland}</p>
-            <p>SKIGEBIETE[index].info</p>
+            <p>${SKIGEBIETE[index].info || ''}</p>
             <p><a href=${SKIGEBIETE[index].link}><i class="fas fa-link"></i>Zur Website</a></p>
             <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
            `)
