@@ -10,6 +10,25 @@ let map = L.map("map", {
     ]
 });
 
+// add POW Watermark
+L.Control.Watermark = L.Control.extend({
+    onAdd: function (map) {
+        var img = L.DomUtil.create('img');
+        img.src = '_POW_AT_lang_blue.png';
+        img.style.width = '100px';
+        return img;
+    },
+    onRemove: function (map) {
+        // Nothing to do here
+    }
+});
+L.control.watermark = function (opts) {
+    return new L.Control.Watermark(opts);
+}
+L.control.watermark({
+    position: 'topright'
+}).addTo(map);
+
 // adjust zoom level and center to selected featuregroup layer
 map.on('layeradd layerremove', function () {
     // Create new empty bounds
@@ -132,30 +151,6 @@ var marker = (function () {
         }
     }
 })();
-
-map.on('baselayerchange', function(e) {
-    console.log(e);
-    map.fitBounds(e.layer);
-  });
-
-// add POW Watermark
-L.Control.Watermark = L.Control.extend({
-    onAdd: function (map) {
-        var img = L.DomUtil.create('img');
-        img.src = '_POW_AT_lang_blue.png';
-        img.style.width = '100px';
-        return img;
-    },
-    onRemove: function (map) {
-        // Nothing to do here
-    }
-});
-L.control.watermark = function (opts) {
-    return new L.Control.Watermark(opts);
-}
-L.control.watermark({
-    position: 'topright'
-}).addTo(map);
 
 // Minimap
 let miniMap = new L.Control.MiniMap(
