@@ -55,29 +55,25 @@ map.on('layeradd layerremove', function () {
 // Overlays für die Themen zum Ein- und Ausschalten definieren
 let overlays = {
     at: L.featureGroup(),
-    bgld: L.featureGroup(),
     ktn: L.featureGroup(),
     noe: L.featureGroup(),
     ooe: L.featureGroup(),
     sbg: L.featureGroup(),
     stmk: L.featureGroup(),
     tir: L.featureGroup(),
-    vbg: L.featureGroup(),
-    wien: L.featureGroup()
+    vbg: L.featureGroup()
 };
 
-// Kartenhintergründe und Overlays zur Layer-Control hinzufügen
+// Overlays zur Layer-Control hinzufügen
 let layerControl = L.control.layers({
     "ganz Österreich": overlays.at,
-    "Burgenland": overlays.bgld,
     "Kärnten": overlays.ktn,
     "Niederösterreich": overlays.noe,
     "Oberösterreich": overlays.ooe,
     "Salzburg": overlays.sbg,
     "Steiermark": overlays.stmk,
     "Tirol": overlays.tir,
-    "Vorarlberg": overlays.vbg,
-    "Wien": overlays.wien
+    "Vorarlberg": overlays.vbg
 })
 .addTo(map);
 overlays.at.addTo(map);
@@ -90,7 +86,7 @@ var snowflake = L.icon({
     popupAnchor: [0, 0] // point from which the popup should open relative to the iconAnchor
 });
 
-// Links und mehrere Variablen in Popup einbinden
+// Für jeden Eintrag in skigebiete.js werden Marker erzeugt und zum Layer overlays.at ("ganz Österreich") hinzugefügt
 var marker = (function () {
     for (let index = 0; index < SKIGEBIETE.length; index++) {
         let marker = L.marker([SKIGEBIETE[index].lat, SKIGEBIETE[index].lon], {
@@ -104,6 +100,7 @@ var marker = (function () {
             <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
            `)
             .addTo(overlays.at)
+        // Mit den nachfolgenden if-Abfragen wird für jedes Bundesland noch ein eigener Layer angelegt
         if (SKIGEBIETE[index].bundeslandId == "ktn") {
             let marker = L.marker([SKIGEBIETE[index].lat, SKIGEBIETE[index].lon], {
                 icon: snowflake
@@ -202,9 +199,14 @@ var marker = (function () {
 let miniMap = new L.Control.MiniMap(
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'), {
         toggleDisplay: true,
-        minimized: false
+        minimized: false,
+        // zoomLevelOffset: The offset applied to the zoom in the minimap compared to the zoom of the main map. Can be positive or negative, defaults to -5.
+        zoomLevelOffset: -4,
+        width: 100,
+        height: 100
     }
 ).addTo(map);
+// source: https://github.com/Norkart/Leaflet-MiniMap
 
 
 // scale bar
@@ -214,4 +216,5 @@ L.control.scale({
 
 // leaflet hash plugin
 L.hash(map);
+// source: https://cdnjs.com/libraries/leaflet-hash
 
