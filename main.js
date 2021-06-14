@@ -168,3 +168,4 @@ L.control.scale({
 
 // leaflet hash plugin
 L.hash(map);
+
