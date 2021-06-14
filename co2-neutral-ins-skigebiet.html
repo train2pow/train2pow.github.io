@@ -42,6 +42,9 @@
         integrity="sha512-ceQPs2CHke3gSINLt/JV37W1rfJOM64yuH999hnRhTP7tNtcSBp5hlTKhn8CEIhsFweSBrZMPVotAKjoyxGWNg=="
         crossorigin="anonymous"></script>
 
+    <!-- Stylesheet - Formular -->
+    <link rel="stylesheet" href="form.css">
+
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon"
@@ -121,6 +124,42 @@
                 <li><a href="https://kombitickets.railtours.at/de/wintersport-kombitickets">
                         Wintersport-Kombitickets der ÖBB</a></li>
             </ul>
+
+            <!-- Formular für Input aus Community -->
+            <form action="anna@protectourwinters.at" id="ft-form" method="POST" accept-charset="UTF-8">
+                <fieldset>
+                  <label>
+                    Dein Name
+                    <input type="text" name="Name" required>
+                  </label>
+                  <label>
+                    Deine E-Mail-Adresse
+                    <input type="email" name="E-Mail" required>
+                  </label>
+                  <label>
+                    Das mit Öffis gut erreichbare Skigebiet, das dir auf unserer Karte noch fehlt
+                    <textarea rows="1" name="Nachricht" required></textarea>
+                  </label>
+                  <label>
+                    Das Bundesland, in dem das Skigebiet liegt
+                    <textarea rows="1" name="Nachricht" required></textarea>
+                  </label>
+                  <label>
+                    Link zur Website des Skigebiets
+                    <textarea rows="1" name="Nachricht" required></textarea>
+                  </label>
+                  <div>
+                    <label>
+                      <input type="checkbox" name="Datenverarbeitung bestätigt" value="Ja" required>
+                      Ich bestätige, dass ich mit der Verarbeitung meiner Eingaben zum Zwecke der Anfragebearbeitung, einverstanden bin.
+                    </label>
+                  </div>
+                </fieldset>
+                <div class="btns">
+                  <input type="text" name="_gotcha" value="" style="display:none;">
+                  <input type="submit" value="Absenden">
+                </div>
+              </form>
 
 
             <div class="et_pb_button_module_wrapper et_pb_button_2_wrapper et_pb_button_alignment_center et_pb_module ">
