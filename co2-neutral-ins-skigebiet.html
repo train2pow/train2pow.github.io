@@ -50,7 +50,7 @@
     <link rel="icon"
         href="https://protectourwinters.at/wp-content/uploads/2020/09/cropped-android-chrome-512x512-1-32x32.png"
         sizes="32x32" />
-    
+
     <!-- Skigebietsinfos -->
     <script defer src="skigebiete.js"></script>
 
@@ -70,11 +70,15 @@
 
     <header>
         <img class="banner" src="pics/panorama-3241426_1920.jpg" alt="Winterliche Landschaft" style="width: 1250px;">
-    
-        <p class="white">Bild von <a href="https://pixabay.com/de/users/monikap-2515080/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3241426">MonikaP</a> auf <a href="https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3241426">Pixabay</a></p>
+
+        <p class="white">Bild von <a
+                href="https://pixabay.com/de/users/monikap-2515080/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3241426">MonikaP</a>
+            auf <a
+                href="https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3241426">Pixabay</a>
+        </p>
 
 
-        <h1> TRAIN 2 POW</h1> 
+        <h1> TRAIN 2 POW</h1>
 
     </header>
 
@@ -93,28 +97,29 @@
     <main>
         <h2>POW bringt dich mit öffentlichen Verkehrsmitteln ins nächstgelegene Skigebiet</h1>
             <p> <br> <br>
-                <a
-                    href="https://uibkacat-my.sharepoint.com/:w:/g/personal/silja_baumann_student_uibk_ac_at/EZntt1ZiwbVMq8BIkpNOegQB9u_qOlvD1w8gEpF2f_MZag?rtime=5qntNUsg2Ug">Link
-                    zum
-                    Konzeptpapier</a>
-
-                Wer ist POW eigentlich? Erfahre hier mehr! -> Link zur Seite über _POW_AT_lang_blue
-
-                Warum TRAIN2POW? Was bringt es, durch die öffenltiche Anreise ins Skigebiet CO2 einzusparen? Erfahre
-                hier, warum die Anreise ins Skigebiet üblicherweise so CO2-intensiv ist. -> hier Link
-
+                Bei der An- und Abreise zum/vom Skifahren und Snowboarden fallen verhältnismäßig die meisten Emissionen
+                an. Eine einfache Möglichkeit, seinem Lieblingssport nachzugehen und einen Beitrag zum Klimaschutz zu
+                leisten, bietet die öffentliche Anreise mit Bus oder Bahn. Diese Karte soll dir als Planungstool für
+                deinen nächsten Tage im Schnee dienen.
             </p>
 
 
             <h3>Übersichtskarte</h3>
             <p>Klicke auf die Schneeflocken in deiner Nähe, um zu sehen, welche Skigebiete mit guter Öffi-Anbindung sich
                 dahinter verbergen, und starte deine Reiseplanung.</p>
+
+            <!-- Karte-->
             <div id="map"></div>
 
+            <p>
+                Mit dem Link "Nächste Verbindung suchen", gelangst du auf die Seite des ÖBB-Scotty, der immer die aktuellsten Reisezeiten für dich bereithält.
+                Zusätzliche Infos zu den einzelnen Skigebieten findest du auf deren Websites, die ebenfalls direkt verlinkt sind.
+            </p>
 
 
-           <!-- @AnnaKlara123 (?) Das brauchen wir in der Form eigentlich gar nicht, weil das ja schon in den Popup-Links "Nächste Verbindung suchen" integriert ist. -->
-           <!--
+
+            <!-- @AnnaKlara123 (?) Das brauchen wir in der Form eigentlich gar nicht, weil das ja schon in den Popup-Links "Nächste Verbindung suchen" integriert ist. -->
+            <!--
            <iframe src=" https://fahrplan.oebb.at/bin/query.exe/dn?" seamless width="100%" height="350"
                 name="ÖBB Webfenster">
             </iframe>
@@ -133,44 +138,46 @@
             </ul>
 
             <h3>Du kennst noch weitere Skigebiete, die gut mit Öffis erreichbar sind?</h3>
-            <p>Dann lass es uns einfach wissen, indem du das nachfolgende Formular ausfüllst. Ein Community-Projekt wie dieses lebt von den Inputs aus der Community, daher freuen wir uns über Hinweise!</p>
+            <p>Dann lass es uns einfach wissen, indem du das nachfolgende Formular ausfüllst. Ein Community-Projekt wie
+                dieses lebt von den Inputs aus der Community, daher freuen wir uns über Hinweise!</p>
 
             <!-- Formular für Input aus Community -->
             <form action="mailto:anna@protectourwinters.at" id="ft-form" method="POST" accept-charset="UTF-8">
                 <fieldset>
-                  <label>
-                    Dein Name
-                    <input type="text" name="Name" required>
-                  </label>
-                  <label>
-                    Deine E-Mail-Adresse
-                    <input type="email" name="E-Mail" required>
-                  </label>
-                  <label>
-                    Das mit Öffis gut erreichbare Skigebiet, das dir auf unserer Karte noch fehlt
-                    <textarea rows="1" name="Nachricht" required></textarea>
-                  </label>
-                  <label>
-                    Das Bundesland, in dem das Skigebiet liegt
-                    <textarea rows="1" name="Nachricht" required></textarea>
-                  </label>
-                  <label>
-                    Link zur Website des Skigebiets
-                    <textarea rows="1" name="Nachricht" required></textarea>
-                  </label>
-                  <div>
                     <label>
-                      <input type="checkbox" name="Datenverarbeitung bestätigt" value="Ja" required>
-                      Ich bestätige, dass ich mit der Verarbeitung meiner Eingaben zum Zwecke der Anfragebearbeitung, einverstanden bin.
+                        Dein Name
+                        <input type="text" name="Name" required>
                     </label>
-                  </div>
+                    <label>
+                        Deine E-Mail-Adresse
+                        <input type="email" name="E-Mail" required>
+                    </label>
+                    <label>
+                        Das mit Öffis gut erreichbare Skigebiet, das dir auf unserer Karte noch fehlt
+                        <textarea rows="1" name="Nachricht" required></textarea>
+                    </label>
+                    <label>
+                        Das Bundesland, in dem das Skigebiet liegt
+                        <textarea rows="1" name="Nachricht" required></textarea>
+                    </label>
+                    <label>
+                        Link zur Website des Skigebiets
+                        <textarea rows="1" name="Nachricht" required></textarea>
+                    </label>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="Datenverarbeitung bestätigt" value="Ja" required>
+                            Ich bestätige, dass ich mit der Verarbeitung meiner Eingaben zum Zwecke der
+                            Anfragebearbeitung, einverstanden bin.
+                        </label>
+                    </div>
                 </fieldset>
                 <div class="btns">
-                  <input type="text" name="_gotcha" value="" style="display:none;">
-                  <input type="submit" value="Absenden">
+                    <input type="text" name="_gotcha" value="" style="display:none;">
+                    <input type="submit" value="Absenden">
                 </div>
-              </form>
-              <!-- Source: https://form.taxi/de/sample-forms/contact-form -->
+            </form>
+            <!-- Source: https://form.taxi/de/sample-forms/contact-form -->
 
 
             <div class="et_pb_button_module_wrapper et_pb_button_2_wrapper et_pb_button_alignment_center et_pb_module ">
@@ -178,7 +185,7 @@
                     href="https://protectourwinters.at/werde-mitglied/">Werde Mitglied von POW</a>
             </div>
 
-<!-- Versuch das mit dem Pulldown Menü und Zoom zu ändern
+            <!-- Versuch das mit dem Pulldown Menü und Zoom zu ändern
         <select id="pulldown"></select>
         <div id="map"></div>
         <div id="profile"></div> -->
