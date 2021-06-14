@@ -10,6 +10,29 @@ let map = L.map("map", {
     ]
 });
 
+// adjust zoom level and center to selected featuregroup layer
+map.on('layeradd layerremove', function () {
+    // Create new empty bounds
+    var bounds = new L.LatLngBounds();
+    // Iterate the map's layers
+    map.eachLayer(function (layer) {
+        // Check if layer is a featuregroup
+        if (layer instanceof L.FeatureGroup) {
+            // Extend bounds with group's bounds
+            bounds.extend(layer.getBounds());
+        }
+    });
+    // Check if bounds are valid (could be empty)
+    if (bounds.isValid()) {
+        // Valid, fit bounds
+        map.fitBounds(bounds);
+    } else {
+        // Invalid, fit world
+        map.setView([47.71216, 13.34290], 7);
+    }
+});
+// source: https://stackoverflow.com/questions/45286918/leafletjs-dynamically-bound-map-to-visible-overlays
+
 // Overlays für die Themen zum Ein- und Ausschalten definieren
 let overlays = {
     at: L.featureGroup(),
@@ -36,9 +59,9 @@ let layerControl = L.control.layers({
     "Tirol": overlays.tir,
     "Vorarlberg": overlays.vbg,
     "Wien": overlays.wien
-}).addTo(map);
+})
+.addTo(map);
 overlays.at.addTo(map);
-
 
 // create custom snowflake icon
 var snowflake = L.icon({
@@ -110,6 +133,10 @@ var marker = (function () {
     }
 })();
 
+map.on('baselayerchange', function(e) {
+    console.log(e);
+    map.fitBounds(e.layer);
+  });
 
 // add POW Watermark
 L.Control.Watermark = L.Control.extend({
