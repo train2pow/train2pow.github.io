@@ -55,29 +55,25 @@ map.on('layeradd layerremove', function () {
 // Overlays für die Themen zum Ein- und Ausschalten definieren
 let overlays = {
     at: L.featureGroup(),
-    bgld: L.featureGroup(),
     ktn: L.featureGroup(),
     noe: L.featureGroup(),
     ooe: L.featureGroup(),
     sbg: L.featureGroup(),
     stmk: L.featureGroup(),
     tir: L.featureGroup(),
-    vbg: L.featureGroup(),
-    wien: L.featureGroup()
+    vbg: L.featureGroup()
 };
 
 // Overlays zur Layer-Control hinzufügen
 let layerControl = L.control.layers({
     "ganz Österreich": overlays.at,
-    "Burgenland": overlays.bgld,
     "Kärnten": overlays.ktn,
     "Niederösterreich": overlays.noe,
     "Oberösterreich": overlays.ooe,
     "Salzburg": overlays.sbg,
     "Steiermark": overlays.stmk,
     "Tirol": overlays.tir,
-    "Vorarlberg": overlays.vbg,
-    "Wien": overlays.wien
+    "Vorarlberg": overlays.vbg
 })
 .addTo(map);
 overlays.at.addTo(map);
