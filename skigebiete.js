@@ -225,4 +225,70 @@ const SKIGEBIETE = [{
     "link": "http://www.lienzer-bergbahnen.at/",
     "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Fulpmes%20Schlick%202000%20Talstation@X=11343749@Y=47155613@U=81@L=000793629@B=1@p=1616676241@&externalCall=yes"
 },
+{
+    "id": "",
+    "name": "",
+    "lat": ,
+    "lon": ,
+    "bundesland": "",
+    "bundeslandId": "",
+    "info": "",
+    "link": "",
+    "scotty": ""
+},
+{
+    "id": "",
+    "name": "",
+    "lat": ,
+    "lon": ,
+    "bundesland": "",
+    "bundeslandId": "",
+    "info": "",
+    "link": "",
+    "scotty": ""
+},
+{
+    "id": "",
+    "name": "",
+    "lat": ,
+    "lon": ,
+    "bundesland": "",
+    "bundeslandId": "",
+    "info": "",
+    "link": "",
+    "scotty": ""
+},
+{
+    "id": "",
+    "name": "",
+    "lat": ,
+    "lon": ,
+    "bundesland": "",
+    "bundeslandId": "",
+    "info": "",
+    "link": "",
+    "scotty": ""
+},
+{
+    "id": "",
+    "name": "",
+    "lat": ,
+    "lon": ,
+    "bundesland": "",
+    "bundeslandId": "",
+    "info": "",
+    "link": "",
+    "scotty": ""
+},
+{
+    "id": "",
+    "name": "",
+    "lat": ,
+    "lon": ,
+    "bundesland": "",
+    "bundeslandId": "",
+    "info": "",
+    "link": "",
+    "scotty": ""
+},
 ];
