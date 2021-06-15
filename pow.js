@@ -24,7 +24,7 @@ var snowflake = L.icon({
 L.Control.Watermark = L.Control.extend({
     onAdd: function (map) {
         var img = L.DomUtil.create('img');
-        img.src = '_POW_AT_lang_blue.png';
+        img.src = 'pics/_POW_AT_lang_blue.png';
         img.style.width = '100px';
         return img;
     },
