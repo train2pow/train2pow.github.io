@@ -207,7 +207,7 @@ nav li[aria-current] a {
 	color: yellow;
     background-color: #234b64;
 }
-
+/* Style beim drüber hovern*/
 nav a:focus,
 nav a:hover,
 nav li[aria-current] a:focus,
