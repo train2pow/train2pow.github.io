@@ -42,9 +42,7 @@ h2, h3 {
     width: 90%;
     height:0.5em;
     margin-top: 5%;
-    margin-bottom: 5%;
-    /* mit dem padding löst sich zumindest auf der Seite co2 neutral ins Skigebiet das Überschneidungsproblem, aber dadurch wird auch die gelbe Leiste dicker und das sieht nicht schön aus */
-   
+    margin-bottom: 5%;   
 }
 
 h4, h5 {
