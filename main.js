@@ -14,7 +14,7 @@ let map = L.map("map", {
 L.Control.Watermark = L.Control.extend({
     onAdd: function (map) {
         var img = L.DomUtil.create('img');
-        img.src = 'pics/_POW_AT_lang_blue.png';
+        img.src = 'pics/POW_AT_lang_blue.png';
         img.style.width = '100px';
         return img;
     },
