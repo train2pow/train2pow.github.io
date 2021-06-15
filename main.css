@@ -14,6 +14,7 @@ header {
 
 yellowspan {
     color: #ffee33;
+    background-color: #234b64
 } 
 
 
@@ -136,6 +137,15 @@ footer {
 i {
     padding-right: 0.3em;
 }
+
+span {
+    font-size: 1.2em;
+    list-style-type: circle;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    color: #234b64;
+}
+
+
 
 .mr-3 {
     margin-right: 00.3em;
