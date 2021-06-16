@@ -40,17 +40,17 @@ h2, h3 {
     color: #234b64;
     background-color: yellow;  
     width: 90%;
-    height:0.5em;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    /* mit dem padding löst sich zumindest auf der Seite co2 neutral ins Skigebiet das Überschneidungsproblem, aber dadurch wird auch die gelbe Leiste dicker und das sieht nicht schön aus */
-    padding-bottom: 1em;
+    height:0.5em; 
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  
 }
 
 h4, h5 {
     color: #234b64;
     font-weight: lighter;
-    margin-top: 8%
 }
 
 .white,
@@ -85,21 +85,27 @@ main {
 }
 
 main p {
-    text-align: justify;
     font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
     color: #234b64;
-    margin: auto
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 main figure {
     margin-left: 0;
-    width: 100%;
+    width: 90%;
 }
 
 main figure img {
     border: 1px solid black;
 }
 
+map h3 {
+    padding-bottom: 1em;
+}
 #map {
     width: 90%;
     height: 90vh;
@@ -118,6 +124,11 @@ main ul {
     list-style-type: circle;
     font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
     color: #234b64;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 footer .next {
