@@ -119,6 +119,7 @@ main ul {
     list-style-type: circle;
     font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
     color: #234b64;
+    margin:auto
 }
 
 footer .next {
