@@ -41,7 +41,6 @@ h2, h3 {
     background-color: yellow;  
     width: 90%;
     height:0.5em; 
-    padding-bottom: 1em;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -104,6 +103,9 @@ main figure img {
     border: 1px solid black;
 }
 
+map h3 {
+    padding-bottom: 1em;
+}
 #map {
     width: 90%;
     height: 90vh;
