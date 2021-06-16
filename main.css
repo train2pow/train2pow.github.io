@@ -40,16 +40,13 @@ h2, h3 {
     color: #234b64;
     background-color: yellow;  
     width: 90%;
-    height:0.5em;
-    margin-top: 5%;
-    margin-bottom: 5%;   
+    height:0.5em; 
     padding-bottom: 1em;
 }
 
 h4, h5 {
     color: #234b64;
     font-weight: lighter;
-    margin-top: 8%
 }
 
 .white,
@@ -87,9 +84,6 @@ main p {
     text-align: justify;
     font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
     color: #234b64;
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 main figure {
@@ -119,7 +113,7 @@ main ul {
     list-style-type: circle;
     font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
     color: #234b64;
-    margin-top: 1rem
+ 
 }
 
 footer .next {
