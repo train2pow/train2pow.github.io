@@ -42,6 +42,7 @@ h2, h3 {
     width: 90%;
     height:0.5em; 
     padding-bottom: 1em;
+  
 }
 
 h4, h5 {
@@ -81,10 +82,13 @@ main {
 }
 
 main p {
-    text-align: justify;
     font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
     color: #234b64;
     display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 main figure {
