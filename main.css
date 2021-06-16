@@ -87,7 +87,9 @@ main p {
     text-align: justify;
     font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
     color: #234b64;
-    margin: auto
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 main figure {
