@@ -285,4 +285,24 @@ const SKIGEBIETE = [{
     "link": "https://skisport.com/Hochkar/de",
     "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Hochkar Lifte Talstation@X=14918102@Y=47718311@U=81@L=000320021@B=1@p=1623396474@&externalCall=yes"
 },
+{
+    "id": "patscherkofel",
+    "name": "Patscherkofelbahn",
+    "lat": 47.22207544902674, 
+    "lon": 11.427029655716025,
+    "bundesland": "Tirol",
+    "bundeslandId": "tir",
+    "link": "https://www.patscherkofelbahn.at/de/winter#winter",
+    "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Igls Patscherkofel Talstation@X=11425110@Y=47222071@U=81@L=000791147@B=1@p=1623754104@&externalCall=yes"
+},
+{
+    "id": "glungezerbahn",
+    "name": "Glungezerbahn",
+    "lat": 47.256567007313265, 
+    "lon": 11.53532878348363, 
+    "bundesland": "Tirol",
+    "bundeslandId": "tir",
+    "link": "https://www.glungezerbahn.at/",
+    "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Tulfes Glungezerbahn Talstation@X=11535246@Y=47257209@U=81@L=000793495@B=1@p=1623754104@&externalCall=yes"
+},
 ];
