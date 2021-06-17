@@ -41,16 +41,14 @@ h2, h3 {
     background-color: yellow;  
     width: 90%;
     height:0.5em; 
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-  
+    margin-top: 5%;
+    margin-bottom: 5%;   
 }
 
 h4, h5 {
     color: #234b64;
     font-weight: lighter;
+    margin-top: 8%
 }
 
 .white,
@@ -103,8 +101,12 @@ main figure img {
     border: 1px solid black;
 }
 
-map h3 {
+#map h2 {
     padding-bottom: 1em;
+    width: 90%;
+    height:0.5em; 
+    margin-top: 5%;
+    margin-bottom: 5%;   
 }
 #map {
     width: 90%;
