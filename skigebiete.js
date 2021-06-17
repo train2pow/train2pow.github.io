@@ -150,7 +150,7 @@ const SKIGEBIETE = [{
         "bundesland": "Salzburg",
         "bundeslandId": "sbg",
         "link": "https://www.snow-space.com/",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=St.Johann im Pongau Bahnhof@X=13194906@Y=47347605@U=81@L=001250408@B=1@p=1623396474@&externalCall=yes"
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=St.Johann im Pongau Bahnhof@X=13194906@Y=47347605@U=81@L=001250408@B=1@p=1623754104@&externalCall=yes"
     },
     {
         "id": "radstadt",
@@ -202,7 +202,7 @@ const SKIGEBIETE = [{
         "bundeslandId": "vbg",
         "info": "Für Reisende mit dem Skizug Montafon gibt es -10% auf Tages- und Halbtagesskipässe.",
         "link": "https://www.silvretta-montafon.at/de",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=SchrunsBahnhof@X=9918536@Y=47079205@U=81@L=001280110@B=1@p=1623396474@&externalCall=yes"
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Schruns Bahnhof@X=9918536@Y=47079205@U=81@L=001280110@B=1@p=1623754104@&externalCall=yes"
     },
     {
         "id": "sonnenkopf",
