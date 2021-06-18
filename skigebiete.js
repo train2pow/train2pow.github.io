@@ -5,7 +5,7 @@ const SKIGEBIETE = [{
         "lon": 11.017325791147448,
         "bundesland": "Tirol",
         "bundeslandId": "tir",
-        "link": "https://www.kuehtai.info/",
+        "link": "https://www.kuehtai.info/index.html",
         "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=K%FChtai%20Gaiskogelbahn@X=11031427@Y=47216479@U=81@L=000792339@B=1@p=1616676241@&externalCall=yes"
     },
     {
@@ -160,7 +160,7 @@ const SKIGEBIETE = [{
         "bundesland": "Salzburg",
         "bundeslandId": "sbg",
         "link": "http://www.radstadt-altenmarkt.at/",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Radstadt Bahnhof@X=13466281@Y=47383849@U=81@L=001250415@B=1@p=1623396474@&externalCall=yes"
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Radstadt%20Bahnhof@X=13466281@Y=47383849@U=81@L=001250415@B=1@p=1623396474@&externalCall=yes"
     },
     {
         "id": "kitzbuehel",
@@ -212,7 +212,7 @@ const SKIGEBIETE = [{
         "bundesland": "Vorarlberg",
         "bundeslandId": "vbg",
         "link": "http://www.sonnenkopf.com/",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Wald am Arlberg Sonnenkopfbahn Talstation@X=10053113@Y=47128538@U=81@L=000891027@B=1@p=1623396474@&externalCall=yes"
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Wald%20am%20Arlberg%20Sonnenkopfbahn%20Talstation@X=10053113@Y=47128538@U=81@L=000891027@B=1@p=1623396474@&externalCall=yes"
     },
     {
         "id": "lienz-hochstein",
@@ -223,7 +223,7 @@ const SKIGEBIETE = [{
         "bundeslandId": "tir",
         "info": "Unweit des Stadtzentrums von Lienz und auch vom Bahnhof problemlos zu Fuß erreichbar.",
         "link": "http://www.lienzer-bergbahnen.at/",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Fulpmes%20Schlick%202000%20Talstation@X=11343749@Y=47155613@U=81@L=000793629@B=1@p=1616676241@&externalCall=yes"
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Lienz%20in%20Osttirol%20Bahnhof@X=12770543@Y=46828217@U=81@L=001270701@B=1@p=1623919089@&externalCall=yes"
     },
     {
         "id": "buchensteinwand-pillersee",
@@ -233,7 +233,7 @@ const SKIGEBIETE = [{
         "bundesland": "Tirol",
         "bundeslandId": "tir",
         "link": "https://www.bergbahn-pillersee.com/de/",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=St.Ulrich/Pillersee Flecken@X=12577042@Y=47505527@U=81@L=000794201@B=1@p=1623396474@&externalCall=yes",
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=St.Ulrich/Pillersee%20Flecken@X=12577042@Y=47505527@U=81@L=000794201@B=1@p=1623396474@&externalCall=yes",
     },
     {
         "id": "bergbahnen-fieberbrunn",
@@ -243,7 +243,7 @@ const SKIGEBIETE = [{
         "bundesland": "Tirol",
         "bundeslandId": "tir",
         "link": "https://www.fieberbrunn.com/de/winter/skigebiet",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Fieberbrunn Bergbahnen Talstation@X=12551602@Y=47467521@U=81@L=000794196@B=1@p=1623396474@&externalCall=yes"
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Fieberbrunn%20Bergbahnen%20Talstation@X=12551602@Y=47467521@U=81@L=000794196@B=1@p=1623396474@&externalCall=yes"
     },
     {
         "id": "venet-bergbahnen",
@@ -253,7 +253,7 @@ const SKIGEBIETE = [{
         "bundesland": "Tirol",
         "bundeslandId": "tir",
         "link": "https://www.venet.at/",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Zams Venetbahn Talstation@X=10584547@Y=47154148@U=81@L=000796019@B=1@p=1623396474@&externalCall=yes"
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Zams%20Venetbahn%20Talstation@X=10584547@Y=47154148@U=81@L=000796019@B=1@p=1623396474@&externalCall=yes"
     },
     {
         "id": "obertilliach-bergbahnen",
@@ -263,7 +263,7 @@ const SKIGEBIETE = [{
         "bundesland": "Tirol",
         "bundeslandId": "tir",
         "link": "https://obertilliacher-bergbahnen.com/",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Obertilliach Ort@X=12616882@Y=46708777@U=81@L=000797057@B=1@p=1623396474@&externalCall=yes"
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Obertilliach%20Ort@X=12616882@Y=46708777@U=81@L=000797057@B=1@p=1623396474@&externalCall=yes"
     },
     {
         "id": "bergbahnen-wildkogel",
@@ -273,7 +273,7 @@ const SKIGEBIETE = [{
         "bundesland": "Salzburg",
         "bundeslandId": "sbg",
         "link": "https://www.wildkogel-arena.at/de/bergbahnen-wildkogel",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Neukirchen am Großvenediger Bahnhof@X=12281162@Y=47252139@U=81@L=001250619@B=1@p=1623396474@&externalCall=yes",
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Neukirchen%20am%20Gro%DFvenediger%20Bahnhof@X=12281162@Y=47252139@U=81@L=001250619@B=1@p=1623919089@&externalCall=yes"
     },
     {
         "id": "ski-areal-hochkar",
@@ -283,7 +283,7 @@ const SKIGEBIETE = [{
         "bundesland": "Niederösterreich",
         "bundeslandId": "noe",
         "link": "https://skisport.com/Hochkar/de",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Hochkar Lifte Talstation@X=14918102@Y=47718311@U=81@L=000320021@B=1@p=1623396474@&externalCall=yes"
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Hochkar%20Lifte%20Talstation@X=14918102@Y=47718311@U=81@L=000320021@B=1@p=1623396474@&externalCall=yes"
     },
     {
         "id": "patscherkofel",
@@ -293,7 +293,7 @@ const SKIGEBIETE = [{
         "bundesland": "Tirol",
         "bundeslandId": "tir",
         "link": "https://www.patscherkofelbahn.at/de/winter#winter",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Igls Patscherkofel Talstation@X=11425110@Y=47222071@U=81@L=000791147@B=1@p=1623754104@&externalCall=yes"
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Igls%20Patscherkofel%20Talstation@X=11425110@Y=47222071@U=81@L=000791147@B=1@p=1623754104@&externalCall=yes"
     },
     {
         "id": "glungezerbahn",
@@ -303,6 +303,6 @@ const SKIGEBIETE = [{
         "bundesland": "Tirol",
         "bundeslandId": "tir",
         "link": "https://www.glungezerbahn.at/",
-        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Tulfes Glungezerbahn Talstation@X=11535246@Y=47257209@U=81@L=000793495@B=1@p=1623754104@&externalCall=yes"
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Tulfes%20Glungezerbahn%20Talstation@X=11535246@Y=47257209@U=81@L=000793495@B=1@p=1623754104@&externalCall=yes"
     },
 ];

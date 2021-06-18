@@ -96,7 +96,7 @@ var marker = (function () {
             <h2>${SKIGEBIETE[index].name}</h2>
             <p>${SKIGEBIETE[index].bundesland}</p>
             <p>${SKIGEBIETE[index].info || ''}</p>
-            <p><a href=${SKIGEBIETE[index].link, target="_blank"}><i class="fas fa-link"></i>Zur Website</a></p>
+            <p><a href=${SKIGEBIETE[index].link}><i class="fas fa-link"></i>Zur Website</a></p>
             <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
            `)
             .addTo(overlays.at)
@@ -109,7 +109,7 @@ var marker = (function () {
                 <h2>${SKIGEBIETE[index].name}</h2>
                 <p>${SKIGEBIETE[index].bundesland}</p>
                 <p>${SKIGEBIETE[index].info || ''}</p>
-                <p><a href=${SKIGEBIETE[index].link, target="_blank"}><i class="fas fa-link"></i>Zur Website</a></p>
+                <p><a href=${SKIGEBIETE[index].link}><i class="fas fa-link"></i>Zur Website</a></p>
                 <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
                 `);
             marker.addTo(overlays.ktn);
@@ -122,7 +122,7 @@ var marker = (function () {
                 <h2>${SKIGEBIETE[index].name}</h2>
                 <p>${SKIGEBIETE[index].bundesland}</p>
                 <p>${SKIGEBIETE[index].info || ''}</p>
-                <p><a href=${SKIGEBIETE[index].link, target="_blank"}><i class="fas fa-link"></i>Zur Website</a></p>
+                <p><a href=${SKIGEBIETE[index].link}><i class="fas fa-link"></i>Zur Website</a></p>
                 <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
                 `);
             marker.addTo(overlays.noe);
@@ -135,7 +135,7 @@ var marker = (function () {
                 <h2>${SKIGEBIETE[index].name}</h2>
                 <p>${SKIGEBIETE[index].bundesland}</p>
                 <p>${SKIGEBIETE[index].info || ''}</p>
-                <p><a href=${SKIGEBIETE[index].link, target="_blank"}><i class="fas fa-link"></i>Zur Website</a></p>
+                <p><a href=${SKIGEBIETE[index].link}><i class="fas fa-link"></i>Zur Website</a></p>
                 <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
                 `);
             marker.addTo(overlays.ooe);
@@ -148,7 +148,7 @@ var marker = (function () {
                 <h2>${SKIGEBIETE[index].name}</h2>
                 <p>${SKIGEBIETE[index].bundesland}</p>
                 <p>${SKIGEBIETE[index].info || ''}</p>
-                <p><a href=${SKIGEBIETE[index].link, target="_blank"}><i class="fas fa-link"></i>Zur Website</a></p>
+                <p><a href=${SKIGEBIETE[index].link}><i class="fas fa-link"></i>Zur Website</a></p>
                 <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
                 `);
             marker.addTo(overlays.sbg);
@@ -161,7 +161,7 @@ var marker = (function () {
                 <h2>${SKIGEBIETE[index].name}</h2>
                 <p>${SKIGEBIETE[index].bundesland}</p>
                 <p>${SKIGEBIETE[index].info || ''}</p>
-                <p><a href=${SKIGEBIETE[index].link, target="_blank"}><i class="fas fa-link"></i>Zur Website</a></p>
+                <p><a href=${SKIGEBIETE[index].link}><i class="fas fa-link"></i>Zur Website</a></p>
                 <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
                 `);
             marker.addTo(overlays.stmk);
@@ -174,7 +174,7 @@ var marker = (function () {
                 <h2>${SKIGEBIETE[index].name}</h2>
                 <p>${SKIGEBIETE[index].bundesland}</p>
                 <p>${SKIGEBIETE[index].info || ''}</p>
-                <p><a href=${SKIGEBIETE[index].link, target="_blank"}><i class="fas fa-link"></i>Zur Website</a></p>
+                <p><a href=${SKIGEBIETE[index].link}><i class="fas fa-link"></i>Zur Website</a></p>
                 <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
                 `);
             marker.addTo(overlays.tir);
@@ -187,7 +187,7 @@ var marker = (function () {
                 <h2>${SKIGEBIETE[index].name}</h2>
                 <p>${SKIGEBIETE[index].bundesland}</p>
                 <p>${SKIGEBIETE[index].info || ''}</p>
-                <p><a href=${SKIGEBIETE[index].link, target="_blank"}><i class="fas fa-link"></i>Zur Website</a></p>
+                <p><a href=${SKIGEBIETE[index].link}><i class="fas fa-link"></i>Zur Website</a></p>
                 <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
                 `);
             marker.addTo(overlays.vbg);
