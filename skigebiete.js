@@ -119,7 +119,8 @@ const SKIGEBIETE = [{
         "lon": 15.757688982742394,
         "bundesland": "Steiermark",
         "bundeslandId": "stmk",
-        "link": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Spital%20am%20Semmering%20Stuhleckbahn%20Talstation@X=15759178@Y=47615322@U=81@L=000613042@B=1@p=1616676241@&externalCall=yes"
+        "link": "https://www.stuhleck.com/",
+        "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=Spital%20am%20Semmering%20Stuhleckbahn%20Talstation@X=15759178@Y=47615322@U=81@L=000613042@B=1@p=1616676241@&externalCall=yes"
     },
     {
         "id": "gasteinertal",
