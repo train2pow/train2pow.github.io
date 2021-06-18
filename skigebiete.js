@@ -5,7 +5,7 @@ const SKIGEBIETE = [{
         "lon": 11.017325791147448,
         "bundesland": "Tirol",
         "bundeslandId": "tir",
-        "link": "https://www.kuehtai.info/",
+        "link": "https://www.kuehtai.info/index.html",
         "scotty": "https://fahrplan.oebb.at/bin/query.exe/dn?REQ0JourneyStopsZID=A=1@O=K%FChtai%20Gaiskogelbahn@X=11031427@Y=47216479@U=81@L=000792339@B=1@p=1616676241@&externalCall=yes"
     },
     {
