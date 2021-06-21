@@ -77,7 +77,7 @@ var standorte = [{
     "lon": 13.043037761598907,
     "bundesland": "Salzburg",
     "stammtisch": "jeden zweiten Mittwoch im Monat",
-    "ansprechperson": "Lisa",
+    "ansprechperson": "Susi",
     "mail": "mailto:salzburg@protectourwinters.at"
 }
 ];
