@@ -6,7 +6,13 @@ let map = L.map("map", {
     center: [47.71216, 13.34290],
     zoom: 7,
     layers: [
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
+        L.tileLayer('https://api.mapbox.com/styles/v1/hanna8br/ckr3mc3gnes5h18mkuzxtvxwn/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaGFubmE4YnIiLCJhIjoiY2tpYWNudXViMGhscDJ5cmtxOTliZDl0NSJ9.KIYizFkjQ7ODuRfxwFBEtg', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            tileSize: 512,
+            zoomOffset: -1,
+        })
+        //L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
     ]
 });
 
@@ -176,7 +182,7 @@ var marker = (function () {
                 <p>${SKIGEBIETE[index].info || ''}</p>
                 <p><a href=${SKIGEBIETE[index].link}><i class="fas fa-link"></i>Zur Website</a></p>
                 <p><a href=${SKIGEBIETE[index].scotty}><i class="fas fa-link"></i>Nächste Verbindung suchen</a></p>
-                `);
+                <script type="text/javascript" src="https://www.alpenvereinaktiv.com/de/embed/24312755/js?mw=true"></script>`)
             marker.addTo(overlays.tir);
         }
         if (SKIGEBIETE[index].bundeslandId == "vbg") {
